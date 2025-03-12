@@ -1,0 +1,277 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #121212;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff5900;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo h1 {
+    color: #ff5900;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header .logo p {
+    color: #ff5900;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ff5900;
+    color: black;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ff5900;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ff5900;
+}
+
+h4 {
+    font-size: 22px;
+    color: #ff5900;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.profile-image img {
+    width: 300px; /* Increased size */
+    height: 300px; /* Increased size */
+    border-radius: 50%;
+    border: 5px solid #ff5900;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Education, Internship, Project Card, Contact Info */
+.education-box,
+.internship-box,
+.project-card,
+.contact-info {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.education-item,
+.internship-box h3,
+.project-card h3 {
+    color: #ff5900;
+}
+
+.education-item p,
+.internship-box p,
+.project-card p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Skills Section */
+.skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.skill-item {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(50% - 20px); /* Set width to 50% to show 2 per row */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-item h3 {
+    font-size: 24px;
+    color: #ff5900;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 18px;
+    color: #ccc;
+}
+/* Section Styles for Project Card */
+ul {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 30px; /* Space for the bullets */
+}
+
+ul li {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 18px; /* Font size for the list items */
+    color: #ccc; /* Light gray text color */
+    line-height: 1.6; /* Line spacing for better readability */
+}
+
+ul li::marker {
+    font-size: 22px; /* Increase bullet size */
+    color: #ff5900; /* Change the bullet color */
+}
+
+/* Contact Section */
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between email and social links */
+    justify-content: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: #ff5900;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    color: #e05d00;
+}
+
+/* Contact Social Links */
+.contact-social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.contact-social-links a:hover .social-icon {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #121212;
+    padding: 20px 0;
+    color: #ccc;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        text-align: center;
+    }
+
+    .skill-item {
+        width: calc(50% - 20px); /* Keep 2 per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        width: 100%; /* Full width for each skill item on very small screens */
+    }
+}
+
